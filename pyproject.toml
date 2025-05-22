@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "jsonrpc-gclient"
+version = "0.1.0"
+description = "A GUI-based JSON-RPC client application."
+authors = ["pristalmangattu@gmail.com"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/PristalMMangattu/JsonRpcGclient"
+keywords = ["jsonrpc", "gui", "client", "python"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"  # For making JSON-RPC requests
+kivy = "^2.3.1"
+trio = "^0.30.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.0"  # For testing
+black = "^23.3.0"  # For code formatting
+flake8 = "^6.1.0"  # For linting
+mypy = "^1.5.0"  # For type checking
+
+[tool.poetry.scripts]
+jrpc-gclient = "jrpc_gclient.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

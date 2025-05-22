@@ -1,0 +1,19 @@
+<BoxLayout orientation="vertical" spacing="10" padding="10">
+    <Label text="Command to Start Software:" />
+
+    <BoxLayout orientation="horizontal" size_hint_y=None height="40">
+        <TextInput id="command_input" hint_text="Enter command" multiline="False" />
+        <Button text="Start Process" size_hint_x=None width="120" />
+    </BoxLayout>
+
+    <Label text="Input:" />
+    <TextInput id="input_text" hint_text="Enter JSON input" multiline="True" size_hint_y=None height="150" />
+
+    <Button text="Send Request" size_hint_y=None height="40" />
+
+    <Label text="STDOUT:" />
+    <TextInput id="output_text" readonly="True" size_hint_y=None height="150" />
+
+    <Label text="STDERR:" />
+    <TextInput id="stderr_text" readonly="True" size_hint_y=None height="150" />
+</BoxLayout>
